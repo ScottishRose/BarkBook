@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #45b1e2;
+  font-family: 'Karla', sans-serif;
+  color: white;
+}
+
+input {
+  font-style: italic;
+  font-size: 1rem;
+  text-align: center;
+  width: 20%;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 1rem;
+}
+
+.button {
+  color: white;
+  background-color: #96c061;
+  height: 2rem;
+  width: 9rem;
+  box-sizing: border-box;
+  border-radius: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*green #96c061
+blue #45b1e2
+grey #f0f0f0
+barkbox font is Apercu */
