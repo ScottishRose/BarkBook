@@ -14,15 +14,27 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      posts: [],
     };
   }
 
   componentDidMount() {
     // make ajax call to get data...
+    request.get('https://barkbook-a096e.firebaseio.com/').then((res) => {
+      this.setstate({
+        posts: res.body,
+      })
+    })
   }
 
   render() {
+  //   const posts = this.state.posts.map((post, idx) =>
+  //   return (
+  //     <Add
+  //       key={idx}
+  //     />
+  //   );
+  // });
     return (
       <div>
         {/* <h1>{this.props.message}</h1> */}
@@ -34,8 +46,6 @@ class App extends React.Component {
           tags="#profile #sideview"
           caption="'Profile viewz'"
         />
-        <Add
-        />
       </div>
     );
   }
@@ -44,18 +54,3 @@ class App extends React.Component {
 App.propTypes = propTypes;
 
 export default withRouter(App);
-
-
-// import React, { Component } from 'react';
-// import { Link, withRouter } from 'react-router';
-//
-// class App extends Component {
-//   constructor() {
-//     super();
-//     this.state = {
-//
-//     }
-//   }
-// }
-//
-// export default withRouter(App);

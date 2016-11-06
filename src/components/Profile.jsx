@@ -89,9 +89,6 @@ class Profile extends React.Component {
               </div>
               <button className="button" type="submit" value="Save" onClick={this.handleSubmit}>Submit</button>
             </div>
-            <div>
-             {activeButton}
-            </div>
           </form>
       </div>
     );
