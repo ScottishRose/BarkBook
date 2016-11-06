@@ -1,7 +1,7 @@
 //this is from the ProfileList.jsx from project 2
 
-import React, { Component } from 'react';
-import Profile from './Profile.jsx';
+import React from 'react';
+import Profile from './profile.jsx';
 
 const propTypes = {
   profile: React.PropTypes.array.isRequired,
@@ -9,7 +9,7 @@ const propTypes = {
   handleDelete: React.PropTypes.func,
 };
 
-class ProfileList extends Component {
+class ProfileList extends React.Component {
   render() {
     if (this.props.data) {
       const profileElement = this.props.profile.map((profile, idx) => {

@@ -1,6 +1,6 @@
 // this is taken from project 2
 
-import React, { Component } from 'react';
+import React from 'react';
 import { withRouter } from 'react-router';
 import firebase from '../../firebase.config.js';
 
@@ -13,7 +13,7 @@ const propTypes = {
   id: React.PropTypes.string,
 };
 
-class Profile extends Component {
+class Profile extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -165,5 +165,3 @@ export default withRouter(Profile);
     // )
 //   };
 // }
-
-

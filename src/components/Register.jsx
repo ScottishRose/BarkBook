@@ -1,10 +1,10 @@
 //this is from project 2
 
-import React, { Component } from 'react';
+import React from 'react';
 import { withRouter } from 'react-router';
 import firebase from '../../firebase.config.js';
 
-class Register extends Component {
+class Register extends React.Component {
   constructor() {
     super();
     this.state = {

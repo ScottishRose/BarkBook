@@ -1,7 +1,7 @@
-* {
+/** {
   margin: 0;
   padding: 0;
-}
+}*/
 
 body {
   background-color: #45b1e2;
@@ -14,7 +14,7 @@ input {
   font-size: 1rem;
   text-align: center;
   width: 20%;
-  display: inline-block;
+  /*display: inline-block;*/
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 1rem;
@@ -23,10 +23,11 @@ input {
 .button {
   color: white;
   background-color: #96c061;
+  font-size: 13px;
   height: 2rem;
   width: 9rem;
   box-sizing: border-box;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 a {
@@ -34,7 +35,33 @@ a {
   color: white;
 }
 
+.add {
+  text-align: center;
+}
 /*green #96c061
 blue #45b1e2
 grey #f0f0f0
 barkbox font is Apercu */
+
+/*Thank to this site for the polaroid css https://designshack.net/articles/css/4-fun-css-image-effects-you-can-copy-and-paste/*/
+
+.polaroid {
+  position: relative;
+  width: 220px;
+}
+
+.polaroid img {
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+
+/*.polaroid p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  color: #888;
+}*/
